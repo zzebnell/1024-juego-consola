@@ -192,8 +192,12 @@ public class Juego {
 
 			juego.sigueJugando();
 
-			System.out.print("w = arriba ; s = abajo ; a = izquierda ; d = derecha\n" + "Digite una letra para mover: ");
+			System.out.print("w = arriba ; s = abajo ; a = izquierda ; d = derecha ; o = salir\n" + "Digite una letra para mover: ");
 			String option = sc.next();
+			
+			if (option.equals("o")) {
+				break;
+			}
 
 			int n = (int) (Math.random() * 2) + 1;
 
